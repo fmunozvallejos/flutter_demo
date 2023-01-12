@@ -17,6 +17,7 @@ class MainScreen extends StatelessWidget {
             SizedBox(height: 50.0),
             _image(),
             _infoPoso(context),
+            _tablaPozo(),
           ],
         ),
       ),
@@ -198,6 +199,103 @@ class MainScreen extends StatelessWidget {
         ),
 
       ],
+    );
+  }
+
+  Widget _tablaPozo(){
+    return
+      Container(
+        margin: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+        child:Table(
+
+      columnWidths: const <int, TableColumnWidth>{
+        0: IntrinsicColumnWidth(),
+        1: IntrinsicColumnWidth(),
+        2: FlexColumnWidth(),
+        3: FlexColumnWidth(),
+      },
+      border: TableBorder.all(),
+      defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        children:[TableRow( children: [
+          Column(children:[Text('Mes', style: TextStyle(fontSize: 20.0))]),
+          Column(children:[Text('Acumulado', style: TextStyle(fontSize: 20.0))]),
+          Column(children:[Text('Caudal', style: TextStyle(fontSize: 20.0))]),
+          Column(children:[Text('Nivel', style: TextStyle(fontSize: 20.0))]),
+        ]),
+          TableRow( children: [
+            Column(children:[Text('Enero')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Febrero')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Marzo')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Abril')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Mayo')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Junio')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Julio')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Agosto')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Septiembre')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Octubre')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Noviembre')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+          TableRow( children: [
+            Column(children:[Text('Diciembre')]),
+            Column(children:[Text('1.500.000')]),
+            Column(children:[Text('29.5')]),
+            Column(children:[Text('49.5')]),
+          ]),
+        ],
+    ),
     );
   }
 
